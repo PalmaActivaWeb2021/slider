@@ -20,7 +20,8 @@ body {
 .slides {
     width: 400%;
     display: flex;
-
+    
+  /* Animación del Slider */
     animation: slide 30s infinite;
 }
 .slider {
@@ -37,8 +38,7 @@ img {
 /* Animation */
 /* imágenes */
 @keyframes slide {
-    0%,
-    100% {
+    0%{
         transform: translateX(0%);
     }
     21% {
@@ -62,4 +62,24 @@ img {
     96% {
         transform: translateX(-75%);
     }
+    100% {
+        transform: translateX(0%);
+    }
 }
+
+
+/* Animaciones en CSS */
+/* @keyframes coche {
+  0% {
+    transform: translateX(0);
+  }
+  
+  50%{
+    color: black;
+    transform: translateX(250px);
+  }
+  
+  100%{
+    transform: translateX(300px);
+  }
+} */
